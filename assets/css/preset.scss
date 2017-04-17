@@ -1,3 +1,19 @@
+@import './fonts';
+
+body {
+  margin: 0 auto !important;
+}
+
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: $fonts;
+}
+
 a {
   text-decoration: none;
 }

@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  margin: 0 auto !important; }
+
+*:before,
+*:after,
+* {
+  box-sizing: border-box; }
+
+* {
+  font-family: "Montserrat", "sans-serif"; }
+
 a {
   text-decoration: none; }
 
@@ -17,12 +29,50 @@ blockquote {
   margin: 0;
   padding: 0; }
 
-.navigation {
+.container {
+  width: 960px;
+  margin: auto; }
+
+.skip-link {
   display: block;
-  border-bottom: 2px solid gray;
+  background: #373737;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px; }
+  .skip-link:hover {
+    background: #222222; }
+
+.navigation {
+  border-bottom: 2px solid #ececec;
   padding: 10px 15px;
   font-size: 16px;
-  height: 200px;
-  background: blue; }
+  background: white; }
+  .navigation * {
+    color: #373737; }
+  .navigation .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navigation .container .brand {
+      flex: 0 1 20%; }
+      .navigation .container .brand > a {
+        font-size: 22px; }
+    .navigation .container .nav {
+      flex: 1;
+      text-align: right; }
+      .navigation .container .nav > .menu {
+        display: block; }
+        .navigation .container .nav > .menu > li {
+          display: inline-block;
+          margin-left: 10px;
+          margin-right: 10px; }
+          .navigation .container .nav > .menu > li:last-child {
+            margin-right: 0; }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
   .navigation.navigation-top {
     top: 0; }

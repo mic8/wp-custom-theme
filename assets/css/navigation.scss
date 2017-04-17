@@ -1,10 +1,42 @@
 .navigation {
-  display: block;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid $blur;
   padding: 10px 15px;
   font-size: 16px;
-  height: 200px;
-  background: $primary;
+  background: $clear;
+  * {
+    color: $dark;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .brand {
+      flex: 0 1 20%;
+      > a {
+        font-size: 22px;
+      }
+    }
+    .nav {
+      flex: 1;
+      text-align: right;
+      > .menu {
+        display: block;
+        > li {
+          display: inline-block;
+          margin-left: 10px;
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
   &.navigation-top {
     top: 0;
   }

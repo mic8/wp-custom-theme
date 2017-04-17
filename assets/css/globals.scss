@@ -1,0 +1,17 @@
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.skip-link {
+  display: block;
+  background: $dark;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  &:hover {
+    background: $very-dark;
+  }
+}
