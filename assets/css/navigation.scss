@@ -1,0 +1,11 @@
+.navigation {
+  display: block;
+  border-bottom: 2px solid gray;
+  padding: 10px 15px;
+  font-size: 16px;
+  height: 200px;
+  background: $primary;
+  &.navigation-top {
+    top: 0;
+  }
+}
